@@ -23,7 +23,7 @@ try:
 
         event = msg.value().decode("utf-8")
         order = json.loads(event)
-        print(f"Event is consumed for order : {order['order_id']} from user : {order['customer_name']}")
+        print(f"Order is received for order : {order['order_id']} from user : {order['customer_name']}")
 
 except KeyboardInterrupt:
     print("Stopping the consumer")
